@@ -50,7 +50,7 @@ Default values are in `config/defaults.conf`. Key settings:
 | Setting | Default | Description |
 |---------|---------|-------------|
 | `TIMEZONE` | `America/Denver` | System timezone |
-| `DEFAULT_USER` | `sredden` | Non-root user for GRD and services |
+| `DEFAULT_USER` | `admin` | Non-root user for GRD and services |
 | `LOCAL_NETWORK` | `192.168.10.0/24` | LAN CIDR for RDP firewall rule |
 | `TAILSCALE_SUBNET` | `100.64.0.0/10` | Tailscale CIDR for RDP firewall rule |
 | `GNOME_SESSION` | `ubuntu` | `ubuntu` (Wayland) or `ubuntu-xorg` (Xorg) |

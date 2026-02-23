@@ -4,7 +4,7 @@ set -euo pipefail
 
 # ── Paths ──────────────────────────────────────────────────────────────
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[1]:-${BASH_SOURCE[0]}}")" && pwd)"
-PROJECT_DIR="$(cd "$SCRIPT_DIR/.." 2>/dev/null && pwd || echo "$SCRIPT_DIR")"
+PROJECT_DIR="$SCRIPT_DIR"
 CONFIG_DIR="$PROJECT_DIR/config"
 SENTINEL_PREFIX="/etc/infrastructure-done"
 

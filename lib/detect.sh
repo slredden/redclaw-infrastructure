@@ -47,7 +47,7 @@ detect_rdp_service() {
     # Check GRD — try user's gsettings or systemctl
     if systemctl --user is-enabled --quiet gnome-remote-desktop.service 2>/dev/null; then
         grd_enabled=true
-    elif [[ -f "/home/${DEFAULT_USER:-sredden}/.local/share/gnome-remote-desktop/rdp-credentials" ]] 2>/dev/null; then
+    elif [[ -f "/home/${DEFAULT_USER:-admin}/.local/share/gnome-remote-desktop/rdp-credentials" ]] 2>/dev/null; then
         grd_enabled=true
     fi
 
